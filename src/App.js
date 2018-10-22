@@ -2,34 +2,62 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faLaptopCode, faMusic } from '@fortawesome/free-solid-svg-icons'
+import Slideshow from './components/Slideshow';
+import slide1 from "./images/slide1.jpg";
+import P5Wrapper from 'react-p5-wrapper';
+import sketch from './sketch';
+
+
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          //bootstrap alert element
-          <div class="alert alert-danger" role="alert">
-            <span class="sr-only">Error:</span>
-            Enter a valid email address
-          </div>
-          <FontAwesomeIcon icon={faCoffee} />
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+    componentWillRender(){
+        console.info("this is an info message");
+        console.log("this is a log message");
+    }
+    render() {
+        return (
+            <div className="App">
+                <div className = "container">
+                    <div class="jumbotron bg-info">
+                      <h1 class="display-4">Marc Eastman</h1>
+                      <p class="lead">Lover of music, space, and computers</p>
+                      <hr class="my-4"/>
+                      <p>Sloth Fam</p>
+                    </div>
+                </div>
+                <div className = 'container'>
+                    <div className = "row">
+                        <div class="col-sm">
+                            <div class="card bg-info">
+                              <FontAwesomeIcon icon={faMusic} size="5x" style ={{margin:"auto"}} />
+                              <div class="card-body">
+                                <h5 class="card-title">Music</h5>
+                                <p class="card-text">Take a peek into my personal life</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            </div>
+                        </div>
+                        <div class = "col-sm">
+                            <P5Wrapper sketch={sketch} style={{zIndex: "-1"}}/>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card bg-info">
+                              <FontAwesomeIcon icon={faLaptopCode} size="5x" style ={{margin:"auto"}} />
+                              <div class="card-body">
+                                <h5 class="card-title">Computers</h5>
+                                <p class="card-text">Take a peek into my professional life</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        );
   }
 }
 
