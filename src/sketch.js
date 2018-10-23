@@ -16,7 +16,7 @@ export default function sketch (p) {
     p.stroke(255);
     p.fill(p.noise(rotation/1000)*255, p.noise(rotation/1000+10000)*255, p.noise(5*rotation/1000+5*rotation/1000+20000)*255);
     p.push();
-    p.rotateX(((p.mouseY-p.height)/p.height)%360);
+    p.rotateX(((p.mouseY)/(p.height*2))%360);
     // p.rotateY((((p.mouseX-p.width)/(p.width*2))+rotation/100)%360);
     p.rotateY(rotation/100);
     p.sphere(100, 24, 16);

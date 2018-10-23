@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Home from './pages/Home';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptopCode, faMusic } from '@fortawesome/free-solid-svg-icons'
-import Slideshow from './components/Slideshow';
-import slide1 from "./images/slide1.jpg";
+// import slide1 from "../images/slide1.jpg";
 import P5Wrapper from 'react-p5-wrapper';
 import sketch from './sketch';
-
+import { BrowserRouter, Link, Route } from "react-router-dom";
+import Music from './pages/Music.js';
+import Computers from './pages/Computers.js';
 
 
 class App extends Component {
@@ -17,46 +18,13 @@ class App extends Component {
     }
     render() {
         return (
-            <div className="App">
-                <div className = "container">
-                    <div class="jumbotron bg-info">
-                      <h1 class="display-4">Marc Eastman</h1>
-                      <p class="lead">Lover of music, space, and computers</p>
-                      <hr class="my-4"/>
-                      <p>Sloth Fam</p>
-                    </div>
+            <BrowserRouter>
+                <div>
+                    <Route exact path = '/' component={() => <Home/>}/>
+                    <Route path='/music' component={()=> <Music/>}/>
+                    <Route path='/computers' component={()=> <Computers/>}/>
                 </div>
-                <div className = 'container'>
-                    <div className = "row">
-                        <div class="col-sm">
-                            <div class="card bg-info">
-                              <FontAwesomeIcon icon={faMusic} size="5x" style ={{margin:"auto"}} />
-                              <div class="card-body">
-                                <h5 class="card-title">Music</h5>
-                                <p class="card-text">Take a peek into my personal life</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                              </div>
-                            </div>
-                        </div>
-                        <div class = "col-sm">
-                            <P5Wrapper sketch={sketch} style={{zIndex: "-1"}}/>
-                        </div>
-                        <div class="col-sm">
-                            <div class="card bg-info">
-                              <FontAwesomeIcon icon={faLaptopCode} size="5x" style ={{margin:"auto"}} />
-                              <div class="card-body">
-                                <h5 class="card-title">Computers</h5>
-                                <p class="card-text">Take a peek into my professional life</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
+            </BrowserRouter>
         );
   }
 }
