@@ -5,6 +5,7 @@ import { faLaptopCode, faMusic } from '@fortawesome/free-solid-svg-icons'
 // import slide1 from "../images/slide1.jpg";
 import P5Wrapper from 'react-p5-wrapper';
 import sketch from '../sketch';
+import background from '../background-sketch';
 import { BrowserRouter, Link, Route } from "react-router-dom";
 import Music from './Music.js';
 import Computers from './Computers.js';
@@ -23,7 +24,7 @@ class Home extends Component {
                       <h1 class="display-4">Marc Eastman</h1>
                       <p class="lead">Lover of music, space, and computers</p>
                       <hr class="my-4"/>
-                      <p>Sloth Fam</p>
+                      <a href = "https://www.github.com/slothdude" style = {{color: "#3A3765"}}>github.com/slothdude</a>
                     </div>
                 </div>
                 <div className = 'container'>
@@ -47,7 +48,7 @@ class Home extends Component {
                               <div class="card-body">
                                 <h5 class="card-title">Computers</h5>
                                 <p class="card-text">My professional life</p>
-                                <a href="#" class="btn btn-primary">Take a peek</a>
+                                <Link to = "/computers" className="btn btn-primary">Take a peek</Link>
                               </div>
                             </div>
                         </div>

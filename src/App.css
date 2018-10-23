@@ -1,7 +1,10 @@
+
+
 .App {
   text-align: center;
   margin-top: 3rem;
   background-color: #3A3765;
+  margin-bottom: 3rem;
 }
 
 .App-logo {
@@ -30,8 +33,13 @@
     height: 100%;
 }
 
-.card:hover{
-    opacity: 20;
+.card-description{
+    padding-top: 1em;
+}
+
+
+canvas{
+    z-index: -1;
 }
 
 @keyframes App-logo-spin {
@@ -47,10 +55,17 @@ html{
   background-color: #3A3765;
 }
 
+.navbar{
+    height:100px;
+}
 .jumbotron{
     position: relative;
     top: 0;
     left: 0;
+}
+
+.row{
+    margin-top: 1rem;
 }
 
 .topPic{
