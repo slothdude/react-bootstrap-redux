@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import P5Wrapper from 'react-p5-wrapper';
 import background from '../background-sketch';
+import businessSloth from '../images/humanoid_sloth_dante_cg.jpg';
 
 //React-router routes for having pages at different endpoints
 const Computers = props => {
@@ -19,8 +20,7 @@ const Computers = props => {
           </div>
           <div className = "container" style = {{zIndex:2, position:'relative'}}>
               <figure class="figure">
-                <img src="https://orig00.deviantart.net/82a7/f/2015/234/2/a/humanoid_sloth_by_dante_cg-d96q7mz.jpg"
-                class="figure-img img-fluid rounded" alt="A sloth holding a suitcase"/>
+                <img src= {businessSloth} class="figure-img img-fluid rounded" alt="A sloth holding a suitcase"/>
                 <figcaption class="figure-caption">source: https://www.deviantart.com/dante-cg/art/HUMANOID-SLOTH-555496235</figcaption>
               </figure>
           </div>
@@ -67,29 +67,6 @@ const Computers = props => {
                             students would also stream the class, and could ask questions via speakers and TVs around the
                             room to make it like they were really in the classroom. I left because I had hard classes senior year
                             and needed to focus on them (CMSC430 omg)
-                        </p>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div className = "row">
-                <div class="col">
-                    <div class="card card-description bg-info">
-                      <div class="card-body">
-                        <h5 class="card-title"><i>???(Classified)</i></h5>
-                        <h3>2018</h3>
-                        <h6>Lead Developer</h6>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-9">
-                    <div class="card card-description bg-info">
-                      <div class="card-body">
-                        <p class="card-text">
-                            I chose to leave the 'company' out of this one because I don't want to be associated with it.
-                            I was 'hired' for an unpaid internship to help make a social media app that I recommended be built in react.
-                            The CEO lied to me about living in my building, being a first year CS student that could take upper level courses,
-                            being a teacher at UMD, working at NASA, and countless other things. Well guess who actually got a job at NASA?
                         </p>
                       </div>
                     </div>
