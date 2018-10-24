@@ -3,7 +3,8 @@ import { BrowserRouter as Route } from "react-router-dom";
 import axios from 'axios';
 
 import Computers from './Computers.js';
-
+import P5Wrapper from 'react-p5-wrapper';
+import background from '../background-sketch';
 
 class Music extends Component{
     constructor(props){
@@ -11,17 +12,14 @@ class Music extends Component{
         this.state = {str: ""};
     }
     componentWillMount(){
-        axios.get('http://107.170.81.187:8080/public/top#_=_')
-          .then(function (response) {
-            console.log(response);
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
+        
     }
     render(){
         return(
             <div>
+                <div className = "background">
+                    <P5Wrapper  sketch={background}/>
+                </div>
               {this.state.str}
             </div>
         );

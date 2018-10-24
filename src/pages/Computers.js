@@ -2,12 +2,16 @@ import React, { Component } from 'react';
 import { BrowserRouter as Route } from "react-router-dom";
 
 import Music from './Music.js';
-
+import P5Wrapper from 'react-p5-wrapper';
+import background from '../background-sketch';
 
 //React-router routes for having pages at different endpoints
 const Computers = props => {
   return(
       <div className = "App">
+          <div className = "background">
+              <P5Wrapper  sketch={background}/>
+          </div>
           <div className = "container">
               <div class="jumbotron bg-info">
                 <h1 class="display-4">Professional</h1>
@@ -16,7 +20,7 @@ const Computers = props => {
                 <p>A summary of places I have worked</p>
               </div>
           </div>
-          <div className = "container">
+          <div className = "container" style = {{zIndex:2, position:'relative'}}>
               <figure class="figure">
                 <img src="https://orig00.deviantart.net/82a7/f/2015/234/2/a/humanoid_sloth_by_dante_cg-d96q7mz.jpg"
                 class="figure-img img-fluid rounded" alt="A sloth holding a suitcase"/>
@@ -86,7 +90,7 @@ const Computers = props => {
                       <div class="card-body">
                         <p class="card-text">
                             I chose to leave the 'company' out of this one because I don't want to be associated with it.
-                            I was 'hired' for an internship to help make a social media app that I recommended be built in react.
+                            I was 'hired' for an unpaid internship to help make a social media app that I recommended be built in react.
                             The CEO lied to me about living in my building, being a first year CS student that could take upper level courses,
                             being a teacher at UMD, working at NASA, and countless other things. Well guess who actually got a job at NASA?
                         </p>
@@ -112,6 +116,29 @@ const Computers = props => {
                             It's mainly just algebra, trig, and word problems. The family is super sweet, and it's a really nice
                             side job to have, expecially while waiting for my first paycheck. Sometimes I can even do it over skype
                             so it's pretty easy. They are doing well in school and the younger one is the coding champ of the school!
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div className = "row">
+                <div class="col">
+                    <div class="card card-description bg-success">
+                      <div class="card-body">
+                        <h5 class="card-title">Business Integra</h5>
+                        <h3>2018-now</h3>
+                        <h6>Application Developer at NASA</h6>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="card card-description bg-success">
+                      <div class="card-body">
+                        <p class="card-text">
+                            It has always been a dream of mine to work at NASA. I don't program anything that goes into space, just
+                            web-apps to help the financial people on the ground stay organized. This is my first real job of my career
+                            and I couldn't be happier. Graduating college is a really scary time when you don't have a job and never really
+                            had an internship. My mom called me almost everyday to apply for a job at a restaurant but I never gave up.
                         </p>
                       </div>
                     </div>

@@ -19,6 +19,9 @@ class Home extends Component {
     render() {
         return (
             <div className="App">
+                <div className = "background">
+                    <P5Wrapper  sketch={background}/>
+                </div>
                 <div className = "container">
                     <div class="jumbotron bg-info">
                       <h1 class="display-4">Marc Eastman</h1>

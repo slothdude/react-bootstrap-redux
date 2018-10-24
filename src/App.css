@@ -2,15 +2,11 @@
 
 .App {
   text-align: center;
-  margin-top: 3rem;
   background-color: #3A3765;
   margin-bottom: 3rem;
+  margin-top: 0rem;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
 
 .App-header {
   min-height: 100vh;
@@ -24,6 +20,12 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.background{
+  position: fixed;
+  top: 0;
+  z-index: 0;
 }
 
 .card{
@@ -40,6 +42,7 @@
 
 canvas{
     z-index: -1;
+
 }
 
 @keyframes App-logo-spin {
@@ -62,6 +65,7 @@ html{
     position: relative;
     top: 0;
     left: 0;
+    margin-top: 3rem;
 }
 
 .row{
