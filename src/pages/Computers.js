@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Route } from "react-router-dom";
-
-import Music from './Music.js';
 import P5Wrapper from 'react-p5-wrapper';
 import background from '../background-sketch';
 

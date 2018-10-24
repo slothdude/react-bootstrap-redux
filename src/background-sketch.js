@@ -4,16 +4,14 @@ export default function sketch (p) {
   var circles = [];
 
   p.setup = function () {
-    let canvas = p.createCanvas(p.windowWidth, p.windowHeight);
+    p.createCanvas(p.windowWidth, p.windowHeight);
     circles.push(new p.Circle(p.windowWidth/2, p.windowHeight/2, 3, 3));
     circles.push(new p.Circle(p.windowWidth/2+100, p.windowHeight/2+100, -3, 3));
-
   };
 
   p.draw = function () {
       p.background('#3A3765');
       for (var i=0; i<circles.length; i++) {
-          // console.log(circles[i]);
         circles[i].display();
         circles[i].move();
       }

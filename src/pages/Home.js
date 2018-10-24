@@ -6,9 +6,7 @@ import { faLaptopCode, faMusic } from '@fortawesome/free-solid-svg-icons'
 import P5Wrapper from 'react-p5-wrapper';
 import sketch from '../sketch';
 import background from '../background-sketch';
-import { BrowserRouter, Link, Route } from "react-router-dom";
-import Music from './Music.js';
-import Computers from './Computers.js';
+import {Link} from "react-router-dom";
 
 
 class Home extends Component {

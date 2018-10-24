@@ -2,7 +2,7 @@ export default function sketch (p) {
   let rotation = 0;
 
   p.setup = function () {
-    let canvas = p.createCanvas(300, 300, p.WEBGL);
+    p.createCanvas(300, 300, p.WEBGL);
   };
 
   p.myCustomRedrawAccordingToNewPropsHandler = function (props) {

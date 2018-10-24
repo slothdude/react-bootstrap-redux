@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Route } from "react-router-dom";
 import axios from 'axios';
-
-import Computers from './Computers.js';
 import P5Wrapper from 'react-p5-wrapper';
 import background from '../background-sketch';
 
@@ -12,7 +9,7 @@ class Music extends Component{
         this.state = {str: ""};
     }
     componentWillMount(){
-        
+
     }
     render(){
         return(
