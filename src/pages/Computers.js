@@ -30,7 +30,7 @@ const Computers = props => {
                     <div class="card card-description bg-info">
                       <div class="card-body">
                         <h5 class="card-title">Horizon-Specialty</h5>
-                        <h3>2012-2017</h3>
+                        <h3>2012 - 2017</h3>
                         <h6>Web Developer</h6>
                       </div>
                     </div>
@@ -53,7 +53,7 @@ const Computers = props => {
                     <div class="card card-description bg-info">
                       <div class="card-body">
                         <h5 class="card-title">DETS at UMD</h5>
-                        <h3>2016-2017</h3>
+                        <h3>2016 - 2017</h3>
                         <h6>Technical Director</h6>
                       </div>
                     </div>
@@ -77,7 +77,7 @@ const Computers = props => {
                     <div class="card card-description bg-success">
                       <div class="card-body">
                         <h5 class="card-title">Self Employed</h5>
-                        <h3>2018-now</h3>
+                        <h3>2018 - 2019</h3>
                         <h6>Math Tutor</h6>
                       </div>
                     </div>
@@ -86,10 +86,10 @@ const Computers = props => {
                     <div class="card card-description bg-success">
                       <div class="card-body">
                         <p class="card-text">
-                            I teach two young sisters(7th and 10th grade) math in my spare time (thanks for the refferal Tommy!)
+                            I tought two young sisters(7th and 10th grade) math in my spare time (thanks for the refferal Tommy!)
                             It's mainly just algebra, trig, and word problems. The family is super sweet, and it's a really nice
-                            side job to have, expecially while waiting for my first paycheck. Sometimes I can even do it over skype
-                            so it's pretty easy. They are doing well in school and the younger one is the coding champ of the school!
+                            side job to have. Sometimes I do it over facetime so it's pretty easy. They are doing well in school
+                            and the younger one is the coding champ of the school!
                         </p>
                       </div>
                     </div>
@@ -100,7 +100,7 @@ const Computers = props => {
                     <div class="card card-description bg-success">
                       <div class="card-body">
                         <h5 class="card-title">Business Integra</h5>
-                        <h3>2018-now</h3>
+                        <h3>2018 - Now</h3>
                         <h6>Application Developer at NASA</h6>
                       </div>
                     </div>
@@ -110,9 +110,16 @@ const Computers = props => {
                       <div class="card-body">
                         <p class="card-text">
                             It has always been a dream of mine to work at NASA. I don't program anything that goes into space, just
-                            web-apps to help the financial people on the ground stay organized. This is my first real job of my career
-                            and I couldn't be happier. Graduating college is a really scary time when you don't have a job and never really
-                            had an internship. My mom called me almost everyday to apply for a job at a restaurant but I never gave up.
+                            web-apps to help the financial people on the ground stay organized. Graduating college is a really scary time when you don't
+                             have a job and never really had an internship. I focused on making personal projects while living at my parent's house to land this one.
+                             Recruiters called me after putting up my resume on <a href="dice.com">dice.com</a>.
+                             <hr/>
+                             While there, I learned SQL, more node.js and react, accessibility practices for users with disabilities, and probably too much about <a href="https://github.com/handsontable/handsontable">handsontable.</a>
+                              The crown jewel of my work here is the Plan vs Actuals module of an app called BETS PvA (primarily used by <a href="https://earthdata.nasa.gov/esdis">ESDIS</a>) that basically replaces google sheets in the browser, allowing collaborarion
+                              (not in real time, lockouts were implemented if a user was editing). Custom formulas with immediate propagation, <a href="https://www.npmjs.com/package/exceljs">excel downloading</a>, user roles and permissions with <a href="https://jwt.io/">JWTs</a> made it come together.
+                              I helped build this with the coding legend Matt Henderson 😎🤠🚀 who also set up a really cool dev deployment setup where each git branch in the project gets deployed to its own url.
+                              <hr/>
+                              Main takeaway: Atlassian sucks (jk but seriously: support, docs, and forum game <em>weak</em>. <a href="https://about.gitlab.com/">Gitlab</a> for the win)
                         </p>
                       </div>
                     </div>
