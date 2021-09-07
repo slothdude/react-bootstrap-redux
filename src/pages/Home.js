@@ -23,9 +23,31 @@ class Home extends Component {
                 <div className = "container">
                     <div class="jumbotron bg-info">
                       <h1 class="display-4">Marc Eastman</h1>
-                      <p class="lead">Lover of music, space, and computers</p>
+                      <p class="lead">Lover of music, mind, and mammals</p>
                       <hr class="my-4"/>
-                      <a href = "https://www.github.com/slothdude" style = {{color: "#3A3765"}}>github.com/slothdude</a>
+                      <ul class="no-bullets">
+                        <li>
+                          <a href="https://www.github.com/slothdude">github.com/slothdude</a>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com/in/marcus-eastman">linkedin.com/in/marcus-eastman</a>
+                        </li>
+                        <li>
+                          <a href="https://www.chess.com/member/marceastman">chess.com/member/marceastman</a>
+                        </li>
+                        <li>
+                          <a href="https://soundcloud.com/slothdude">soundcloud.com/slothdude</a>
+                        </li>
+                        <li>
+                          <a href="https://open.spotify.com/user/1231917864?si=dbbc84576aac47a9">open.spotify.com/user/1231917864</a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com/glowsloth">instagram.com/glowsloth</a>
+                        </li>
+                        <li>
+                          <a href="https://www.facebook.com/wachowpow/">facebook.com/wachowpow</a>
+                        </li>
+                      </ul>
                     </div>
                 </div>
                 <div className = 'container'>
