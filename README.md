@@ -32,8 +32,12 @@ making the processing.js library work with react router before)
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/website-hosting-custom-domain-walkthrough.html
 
 
-
 Basically its statically hosted in an aws S3 bucket, and I manually build it using `npm build` whenever I want to upload my changes, and 
 copy the contents of the build folder into aws because its not that hard to copy into the one bucket. If this was a more serious project I would consider trying to setup an automated
 deployment pipeline but I've heard that that can be pretty annoying with git -> aws codedeploy integrations 
+
+### SSL certificate tutorial 
+https://towardsdatascience.com/static-hosting-with-ssl-on-s3-a4b66fb7cd00
+
+don't forget to set the default root object: https://serverfault.com/questions/581268/amazon-cloudfront-with-s3-access-denied
 
